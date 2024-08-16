@@ -24,10 +24,56 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  /* font-family: "CircularStd", sans-serif; */
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+@layer base {
+  /* html {
+    font-family: "CircularStd", system-ui, sans-serif;
+  } */
+  h6,
+  .h6,
+  h5,
+  .h5,
+  h4,
+  .h4,
+  h3,
+  .h3,
+  h2,
+  .h2,
+  h1,
+  .h1 {
+    font-family: "Poppins", sans-serif;
+  }
+  @font-face {
+    font-family: "CircularStd";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/CircularStd-Book.woff2) format("woff2");
+  }
+
+  @font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/Poppins-Regular.ttf) format("truetype");
+    /* url(/fonts/Poppins-Bold.ttf) format("truetype"),
+      url(/fonts/Poppins-Black.ttf) format("truetype"); */
+  }
+
+  /* 
+  @font-face {
+    font-family: "Poppins";
+    font-style: bold;
+    font-weight: 700;
+    font-display: swap;
+    src: url(/fonts/Poppins-Bold.ttf) format("truetype");
+  } */
 }
