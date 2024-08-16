@@ -270,8 +270,10 @@ export default function Example() {
                           {exp.year}
                         </p>
                         <ul className="space-y-6 lg:space-y-2 pl-4 text-sm list-disc ">
-                          {exp.items.map((item) => (
-                            <li className="text-indigo-600">{item}</li>
+                          {exp.items.map((item, key) => (
+                            <li className="text-indigo-600" key={key}>
+                              {item}
+                            </li>
                           ))}
                         </ul>
                       </div>
@@ -294,8 +296,8 @@ export default function Example() {
             <div className="bg-white text-center">
               <div className="mx-auto max-w-2xl  py-16 sm:py-24 lg:max-w-7xl ">
                 <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3 mt-6">
-                  {portfolios.slice(0, 3).map((portfolio) => (
-                    <CardItem listitem={portfolio} />
+                  {portfolios.slice(0, 3).map((portfolio, key) => (
+                    <CardItem listitem={portfolio} key={key} />
                   ))}
                 </div>
               </div>
